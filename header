@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+        <title><?php bloginfo('name'); ?></title>
+
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+   <?php wp_head(); ?>
+   </head>
+    <body>
+        <div class="container">
+            <header class="row">
+                <div class="twelve columns">
+                    <h1><a href="<?php the_permalink(); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <h2><?php bloginfo('description'); ?></h2>
+                </div>
+            </header>
+<!-- END OF HEADER - BEGIN SECTION CONTENT -->
+
+<a href='<?php the_permalink(); ?>">
